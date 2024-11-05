@@ -22,24 +22,24 @@
 cd webapp
 python -m venv venv
 source ./venv/bin/activate
+# .\venv\Scripts\activate - Windows
 pip install -r requirements.txt
-python object_detector.py
 ```
 
 Для запуска используйте комманду:
 
 ```
+cd webapp
 python server.py
 ```
 
-Проект будет доступен по адресу http:///localhost:8080
+Проект будет доступен по адресу http://localhost:8080
 
 ## Используемые библиотеки
 
 flask для создания веб-приложения Flask, получения запросов от внешнего интерфейса и отправки ему ответов.
 waitress для запуска веб-сервера и обслуживания на нем веб-приложения Flask.
-nltk - для обработки текста.
+nltk для обработки текста.
 catboost для работы модели и предсказаний.
 pandas для работы с датафреймами.
 pyarrow для загрузки .parquet файлов.
-
