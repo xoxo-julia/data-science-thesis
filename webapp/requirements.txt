@@ -1,0 +1,8 @@
+flask
+waitress
+pillow
+catboost
+pandas
+pyarrow
+numpy
+nltk
