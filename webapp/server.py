@@ -3,6 +3,7 @@ from waitress import serve
 from catboost import CatBoostClassifier
 import pandas as pd
 
+import os
 import re
 import nltk
 from nltk.stem import SnowballStemmer
@@ -14,6 +15,7 @@ nltk.download("wordnet", quiet=True)
 nltk.download("punkt", quiet=True)
 nltk.download('punkt_tab', quiet=True)
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 app = Flask(__name__)
 
 model = CatBoostClassifier()

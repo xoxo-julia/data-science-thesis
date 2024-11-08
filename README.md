@@ -19,18 +19,16 @@
 Выполните ниже приведенные команды чтобы создать виртуальное окружение и установить приложение:
 
 ```bash
-cd webapp
 python -m venv venv
 source ./venv/bin/activate
 # .\venv\Scripts\activate - Windows
-pip install -r requirements.txt
+pip install -r webapp/requirements.txt
 ```
 
 Для запуска используйте комманду:
 
-```
-cd webapp
-python server.py
+```bash
+python webapp/server.py
 ```
 
 Проект будет доступен по адресу http://localhost:8080

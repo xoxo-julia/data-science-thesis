@@ -1,6 +1,9 @@
 # Other
 *.parquet
-docs/
+docs/*
+!*_size.parquet
+!*.pdf
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
